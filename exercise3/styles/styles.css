@@ -1,0 +1,55 @@
+/*This one below is for designing size, font, and position of text*/
+
+h1 {
+  text-align: center;
+  color:#BDE8CA;
+  font-size: 300%;
+  font-family: arial, sans-serif;
+}
+h2 {
+  text-align: center;
+  color:#BDE8CA;
+  font-size: 200%;
+  font-family: arial, sans-serif;
+}
+p {
+  color: black;
+  text-align: left;
+  font-family: arial, sans-serif;
+  font-size: 140%;
+}
+ul {
+  list-style-type:square;
+  font-size: 150%;
+  font-family: arial, sans-serif;
+} 
+
+
+/*This one below is for designing background color, frame padding, margin of heading*/
+
+body {
+  margin: 0px;
+} 
+  #myHeader  { 
+    background-color: #557C56;
+    color: #BDE8CA;
+    padding: 50px;
+    text-align: center;
+    margin: 0px;
+  } 
+  .link { 
+    background-color: #AAB396;
+    color: #BDE8CA;
+    padding: 1px;
+    text-align: center;
+    margin: 0px;
+  }
+  .text {
+    background-color: #AAB396;
+    color: #BDE8CA;
+    padding: 0px 50px;
+    margin: 30px 50px;
+    
+  }
+
+

@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Main Page</title>
-    <link rel="stylesheet" href="styles/styles.css">
-  </head>
-<body style="background-color:#6A9C89;">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout 960px</title>
+<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div id= "page"> 
+    <div id= "header"> 
+        <div id= "logo"> 
+            Logo
+        </div>
+        <div id= "middle"> 
+            Middle
+        </div>
+        <div id= "right">
+            Right
+        </div>
 
-<!-- Below is the body part -->
+    </div><!-- header end-->
+    <div id= "menu">
+              <a>Main page</a> | 
+              <a>Hobbies</a> | 
+              <a>Portfolio</a>
+    </div>
+    <div id= "content">
+        <div id= "content_left"> 
+            Note that we also use the clearfix hack to 
+            take care of the layout flow, 
+            and that we add the box-sizing property to make sure 
+            that the image container doesn't break due to extra padding. 
+            Try to remove this code to see the effect.
+            [Content left]
+        </div>
+        <div id= "content_right">
+            Note that we also use the clearfix hack to 
+            take care of the layout flow, 
+            and that we add the box-sizing property to make sure 
+            that the image container doesn't break due to extra padding. 
+            Try to remove this code to see the effect.
+            [Content right]
 
-<h1 id="myHeader">Loi Nguyen</h1> <!-- This id is for Heading -->
+          
+        </div>
 
-<div class="link"> <!-- This style 'link' is for website changing -->
-<h3 style="text-align: center;font-family: arial, sans-serif;"> 
-  <a href="index.html">Main page</a> | 
-  <a href="hobbies.html">Hobbies</a> | 
-  <a href="portfolio.html">Portfolio</a> </h3>
-</div>
+    </div><!-- content ends -->
+    <div id= "footer">
+            Footer
+    </div>
 
-<h1><img src="avatar.png" alt="avatar1" style="width:20%;height:20%;"></h1>
-<p>My name is Loi and I am studying in <strong>ICT</strong> field at JAMK. My major is <strong>Data Analyst</strong>.</p>
-
-<div class="text">
-<h2 style="text-align: left;">Hobbies</h2>
-</div>
-
-<p>My hobbies can be listed below:</p>
-<ul style="list-style-type:square;">
-    <li>Swimming</li>
-    <li>Reading</li>
-    <li>Camping</li>
-    <li>Travelling</li>
-</ul>
-
-
-<div class="text">
-<h2 style="text-align: left;">Contact information</h2>
-</div>
-<address>
-    <p style="text-align: center;">Email: <a href="mailto:ac4932@student.jamk.fi">ac4932@student.jamk.fi</a></p>
-    <p style="text-align: center;">Phone: 012-345 6789</p>
-</address> 
-
+</div><!-- page eng -->
 
 </body>
 </html> 

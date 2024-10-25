@@ -87,6 +87,7 @@ footer {
     border-radius: 5px;
     width: auto;
     min-width: 200px;
+    vertical-align: top;
 }
 
 

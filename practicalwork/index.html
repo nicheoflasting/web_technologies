@@ -2,28 +2,212 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Dark Mode Button |Dev Mode</title>
-
-    <!-- CSS -->
+    <title>Portfolio | Loi Nguyen</title>
+    <!-- IMPORT BOXICONS -->    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- ICONS CDN FONTAWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    
-    <div class="btn">
-        <div class="btn__indicator">
-          <div class="btn__icon-container">
-            <i class="btn__icon fa-solid fa-sun"></i>
-          </div>
+    <!-- BLUR BACKGROUND -->
+    <div class="wrapper">
+        <div class="circle-1"></div>
+    </div>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="logo">
+            <span>Loi Nguyen</span>
         </div>
-      </div>
+        <ul class="nav_menu">
+            <li class="nav_list">
+                <a href="#introo" class="nav_link">Home</a>
+            </li>
+            <li class="nav_list">
+                <a href="#about" class="nav_link">About</a>
+            </li>
+            <li class="nav_list">
+                <a href="#edu" class="nav_link">Education</a>
+            </li>
+            <li class="nav_list">
+                <a href="#proj" class="nav_link">Project</a>
+            </li>
+        </ul>
+        <div class="nav_button">
+            <button class="bttn hire-me">Hire me</button>
+            <span class="menu-button"><i class="bx bx-menu"></i></span>
+        </div>
+        <!-- Darkmode button -->
+        <div class="btn">
+            <div class="btn__indicator"></div>
+        </div>
+    </header>
 
-  <script src="js/lightmode.js"></script>
+    <!-- INTRO SECTION -->
+    <div class="intro" id="introo">
+        <div class="col col-1">
+            <div class="intro-work">
+                <p>I am an <br> <span style="color: #C0C2C9">ICT student</span></p>
+            </div>
+            <div class="intro-description">
+                <p>As a first-year ICT student majoring in Data Analytics and Artificial Intelligence 
+                at Jamk University of Applied Sciences, 
+                I am eager to apply my foundational knowledge in data analysis and programming to real-world challenges. 
+                I am passionate about uncovering actionable insights from data and am ready to bring my enthusiasm, adaptability, 
+                and attention to detail to support your organization's analytical needs while expanding my expertise.
+                </p>
+            </div>
+            <div class="intro-social-icons">
+                <i class="bx bxl-github"></i>
+                <i class="bx bxl-instagram"></i>
+                <i class="bx bxl-linkedin"></i>
+                <i class="bx bxl-whatsapp"></i>
+            </div>
+        </div>
+        <div class="col col-2">
+            <div class="img-container">
+                <img src="1.jpg" alt="profileimg" style="width: 300px;height: 300px;">
+            </div>
+        </div>
+    </div>
 
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+        <div class="top-header">
+          <h1>About Me</h1>
+        </div>
+        <div class="info">
+            <div class="coll">
+                <div class="aboutme">
+                    <h3>My introduction</h3>
+                    <p> I am passionate about exploring the transformative potential of artificial intelligence and data analytics. 
+                    I am learning key skills like data preprocessing, analytics, and machine learning using tools.
+                    Through hands-on projects, I aim to develop AI-driven solutions to optimize business functions and address challenges in industries like healthcare, transportation, and more. 
+                    My goal is to contribute to innovation by refining and utilizing data to drive efficiency and growth.
+                    </p>
+                </div>
+            </div>            
+            <div class="coll">
+                <div class="skill-box">
+                    <div class="skill-header">
+                        <h3>Main</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span>MySQL</span>
+                        <span>Excel</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-header">
+                        <h3>Analysis</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>R</span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-header">
+                        <h3>Visualisation</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span>Matplotlib</span>
+                        <span>Seaborn</span>
+                        <span>PowerBI</span>
+                        <span>Tableau</span>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>     
+
+    <!-- EDUCATION SECTION -->
+    <section class="section" id="edu">
+        <div class="top-header">
+            <h1>Education</h1>
+        </div>
+        <div class="info">
+            <div class="coll">
+                <div class="education">
+                    <h3>Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                                <i class="fa fa-calendar"></i> 2024 - Present
+                            </h3>
+                            <h4 class="timeline-title">ICT, Bachelor of Engineering</h4>
+                            <p class="timeline-text">Students in the Degree Programme in Information and Communications Technology are able to apply the basic laws of natural sciences to solve problems in their own field. 
+                            They master the skills to build information technology in an increasingly digitalised and automated society. 
+                            They are capable of ethically planning, building and testing information technology solutions for the needs of working life.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="coll">
+                <div class="experience">
+                    <h3>Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                                <i class="fa fa-calendar"></i> ...
+                            </h3>
+                            <h4 class="timeline-title">...</h4>
+                            <p class="timeline-text">I am seeking for an internship of Data position. 
+                                This information section will be updated soon...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+
+    <!-- CERTIFICATE SECTION -->
+    <section class="section" id="certi">
+        <div class="top-header">
+          <h1>Certificate</h1>
+        </div>
+        <div class="row">
+            <div class="certi-heading">
+                <h3>My Lastest Certificate:</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="certi-item">
+                <div class="certi-item-inner">
+                    <div class="certi-img">
+                        <img src="2.jpg" alt="certi1" style="width: 400px;height: 300px;" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT SECTION -->
+    <section class="section" id="proj">
+        <div class="top-header">
+          <h1>Project</h1>
+        </div>
+        <h3>The project will be updated soon...</h3>
+    </section>
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="top-footer">
+            <p>Loi Nguyen</p>
+        </div>
+        <div class="middle-footer">
+            <address>
+                <p style="text-align: center;">Email: <a href="mailto:ac4932@student.jamk.fi">ac4932@student.jamk.fi</a></p>
+            </address>    
+        </div>
+    </footer>
+    <!-- JS SECTION -->
+    <script src="effect.js"></script>
 </body>
 </html>

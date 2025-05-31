@@ -47,7 +47,7 @@ body{
   bottom: 100px;
   width: 50px;
   height: 50px;
-  background-color: #80f818;
+  background-color: #3EB489;
   border-radius: 50%;
   z-index: 0;
 }
@@ -85,7 +85,7 @@ header{
   
 }
 .nav_link:hover{
-  color: #80f818;
+  color: #3EB489;
 }
 .nav_link::after{
   content: '';
@@ -94,7 +94,7 @@ header{
   bottom: -7px;
   width: 100%;
   height: 2px;
-  background-color: #80f818;
+  background-color: #3EB489;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform .3s;
@@ -128,10 +128,6 @@ header{
 .bttn:hover{
   opacity: 0.8;
 }
-.hire-me{
-  font-family: 'Abril Fatface', serif;
-  background-color: #E7DBDB;
-}
 /* -------- The effect of underline movement of header ends --------- */
 /* --------- End of Header + Navigation Bar -------- */
 
@@ -139,9 +135,9 @@ header{
 .intro{
   position: relative;
   display: flex;
-  padding: 0 6.4vw;
+  padding: 0 6vw;
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   z-index: 5;
 }
 .col{
@@ -152,7 +148,7 @@ header{
 }
 .intro-work{
   font-family: 'Abril Fatface';
-  font-size: 50px;
+  font-size: 100px;
   color: black;
   animation: fade-right 2s var(--animation-delay) forwards;
   --animation-delay: 200ms;
@@ -160,15 +156,15 @@ header{
 .intro-description{
   font-family: 'Poppins', sans-serif;
   padding-block: 30px 40px;
-  width: 500px;
+  width: fit-content;
   color: black;
   animation: fade-right 2s var(--animation-delay) forwards;
   --animation-delay: 400ms;
-  font-size: 17px;
+  font-size: 19px;
 }
 .intro-social-icons{
   position: absolute;
-  bottom: 100px;
+  bottom: 90px;
   display: flex;
   gap: 50px;
 }
@@ -180,7 +176,7 @@ header{
   animation: fade-down 1s ease-out var(--animation-delay) forwards;
 }
 .intro-social-icons i:hover{
-  color: #80f818;
+  color: #3EB489;
 }
 .bxl-github{
   --animation-delay: 0ms;
@@ -197,18 +193,6 @@ header{
 .bxl-whatsapp{
   --animation-delay: 600ms;
   --icon-count: -100px;
-}
-.col-2{
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.img-container{
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  overflow: hidden;
-  animation: fade-left 1.4s ease-out;
 }
 .bx-menu{
   font-size: 30px;
@@ -261,7 +245,7 @@ header{
 }
 .skill-list span{
   font-size: 22px;
-  background: #80f818;
+  background: #3EB489;
   color: rgb(255, 255, 255);
   padding: 2px 10px;
   border-radius: 5px;
@@ -315,7 +299,7 @@ h3{
   height: 100%;
   left: 7px;
   top: 0;
-  background-color: #80f818;
+  background-color: #3EB489;
 }
 .circle-dot{
   position: absolute;
@@ -324,7 +308,7 @@ h3{
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  background-color: #80f818;
+  background-color: #3EB489;
 }
 .timeline-date h3{
   font-size: 14px;
@@ -346,7 +330,7 @@ h3{
   line-height: 25px;
   font-size: 22px;
   text-align: left;
-  color: #504e70;
+  color: #777;
 }
 .education{
   animation: fade-left 1.4s ease-out;
@@ -385,7 +369,7 @@ footer{
   align-items: center;
   flex-direction: column;
   row-gap: 30px;
-  background: #f3f3f3e4;
+  background: #d2d2d2;
   padding-block: 40px 60px;
   font-family: 'Abril Fatface', serif;
   transition: .3s;
@@ -473,14 +457,6 @@ footer{
   .col{
     width: 100%;
   }
-  .col-1{
-    order: 2;
-  }
-  .col-2{
-    order: 1;
-    align-items: center;
-    margin-top: 7px;
-  }
   .intro-social-icons{
     position: static;
     margin: 50px 0;
@@ -495,6 +471,7 @@ footer{
     display: flex;
     justify-content: center;
     width: 100%;
+    order: 2;
   }
   .aboutme{
     width: 100%;
@@ -509,11 +486,7 @@ footer{
     display: none;
   }
   .intro-work{
-    font-size: 50px;
-  }
-  .img-container{
-    width: 280px;
-    height: 285px;
+    font-size: 100px;
   }
   .description_box{
     width: inherit;
@@ -564,15 +537,15 @@ footer{
 }
 
 body.darkmode{
-  background-color: #222;
+  background-color:  #48505d;
 }
 
 .darkmode .intro-social-icons i:hover, .nav_link:hover{
-  color: #80f818;
+  color: #3EB489;
 }
 
 .darkmode .btn{
-  background-color: rgb(7, 240, 7);
+  background-color: #3EB489;
 }
 
 .darkmode .btn__indicator{
@@ -580,7 +553,7 @@ body.darkmode{
   background-color: white;
 }
 .darkmode .bx-menu{
-  color: #80f818;
+  color: #3EB489;
 }
 .darkmode .top-header h1{
   font-weight: 600;
@@ -591,12 +564,11 @@ body.darkmode{
   color: white;
 }
 .darkmode .aboutme{
-  background: #80f818;
+  background: #3EB489;
   box-shadow: 1px 8px 10px 2px rgba(255, 255, 255, 0.1);
 }
 .darkmode .aboutme p{
   color: rgb(68, 68, 68);
-  box-shadow: 1px 8px 10px 2px rgba(255, 255, 255, 0.1);
 }
 .darkmode .skill-list span{
   color: rgb(68, 68, 68);
@@ -611,7 +583,7 @@ body.darkmode{
   color: rgb(68, 68, 68);
 }
 .darkmode footer{
-  background-color: #222;
+  background-color: #191C27;
 }
 .darkmode .middle-footer{
   color: white;
